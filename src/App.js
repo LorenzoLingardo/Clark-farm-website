@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
+import DropDownMain from "./DropDownMain"
+import CFHistory from "./CFHistory"
+
 
 function App() {
+  const cfFacts = CFHistory.map(content => <MainContent key = {content.id} fact={content.fact}/>)
+  var title = document.querySelector('title');
+  title.innerText = 'Clark Historic Farm';
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <DropDownMain/>
+      {cfFacts}
+      <Footer />
     </div>
   );
 }
