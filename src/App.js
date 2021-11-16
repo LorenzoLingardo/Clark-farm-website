@@ -3,8 +3,7 @@ import './App.css';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Main from "./components/Main"
-
-
+import Dropdown from './components/Dropdown';
 
 function App() {
   var title = document.querySelector('title');
@@ -13,6 +12,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Dropdown />
       <Main />
       <Footer />
     </div>
