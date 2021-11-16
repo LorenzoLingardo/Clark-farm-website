@@ -7,7 +7,7 @@ import Main from "./components/Main"
 
 
 function App() {
-  var title = document.querySelector('title');
+  let title = document.querySelector('title');
   title.innerText = 'Clark Historic Farm';
   
   return (
