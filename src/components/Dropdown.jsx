@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 const Dropdown = () => {
     return(
@@ -7,15 +8,15 @@ const Dropdown = () => {
                 Test Dropdown
             </button>
             <div className="dropDown-content">
-                <a href="#">
+                <Link to ="/">
                     Number One
-                </a>
-                <a href="#">
+                </Link>
+                <Link to ="/">
                     Number Two
-                </a>
-                <a href="#">
+                </Link>
+                <Link to ="/">
                     Number Three
-                </a>
+                </Link>
             </div>
         </div>
     )
