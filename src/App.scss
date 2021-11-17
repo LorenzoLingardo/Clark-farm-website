@@ -1,0 +1,111 @@
+$site-font: "Copperplate", fantasy;
+$main-background: rosybrown;
+
+/* Header CSS */
+.header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    font-family: $site-font;
+    background-color: $main-background;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 10%;
+  }
+  
+  .headerTitle {
+    color: #515050;
+  }
+  
+  .headerSubtitle {
+    color: #2F523C;
+  }
+  
+  /* Dropdown CSS */
+  .dropDown{
+    position: relative;
+    left: 20%;
+    display: inline-block;
+  }
+  
+  .dropDownBtn {
+    background-color: #ce3737;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 0px;
+  }
+  
+  .dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .dropDown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropDown-content a:hover {
+    background-color: #f1f1f1
+  }
+  
+  .dropDown:hover .dropDown-content {
+    display: block;
+  }
+  
+  .dropDown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  /* Main CSS*/
+  .main {
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    position: absolute;
+  }
+  
+  .mainTitle {
+    position: absolute;
+    top: 0px;
+    color: #2F523C;
+    font-family: "Helvetica";
+  }
+  
+  /* Footer CSS */
+  .footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    font-family: $site-font;
+    background-color: $main-background;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+  }
+  
+  .footerLeft {
+    color: #515050;
+  }
+  
+  .footerRight {
+    color: #2F523C;
+  }
+  
+  
+  
