@@ -4,9 +4,11 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Main from "./components/Main"
 import Dropdown from './components/Dropdown';
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import CFHistory from './components/CFHistory';
+import {Routes, Route} from "react-router-dom";
 
 function App() {
+  const cfFacts = CFHistory.map(content => <Main key = {content.id} fact={content.fact}/>)
   var title = document.querySelector('title');
   title.innerText = 'Clark Historic Farm';
   
@@ -20,7 +22,7 @@ function App() {
         </Routes> */}
       <Header />
       <Dropdown />
-      <Main />
+      {cfFacts}
       <Footer />
     </div>
   );
