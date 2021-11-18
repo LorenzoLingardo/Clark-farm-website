@@ -1,12 +1,15 @@
 import React from "react"
 
-const Main = () => {
+const Main = (props) => {
     return (
-        <div className="main">
+        <main className="main">
             <h1 className="mainTitle">
-                This stuff
+                Main Title
             </h1>
-        </div>
+            <h1 className="mainContent">
+                {props.fact}
+            </h1>
+        </main>
     )
 }
 
