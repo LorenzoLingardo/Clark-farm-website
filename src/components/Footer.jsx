@@ -3,12 +3,9 @@ import React from "react"
 const Footer = () => {
     return (
         <div className="footer">
-            <h4 className="footerLeft">
+            <h4 className="footerMain">
                 Something
             </h4>
-            <h5 className="footerRight">
-                Something smaller
-            </h5>
         </div>
     )
 }
