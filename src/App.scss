@@ -1,12 +1,12 @@
 $site-font: "Copperplate", fantasy;
 $main-background: rosybrown;
 
-/* Header CSS */
+/* Header SASS */
 .header {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: right;
     font-family: $site-font;
     background-color: $main-background;
     position: absolute;
@@ -20,14 +20,10 @@ $main-background: rosybrown;
     color: #515050;
   }
   
-  .headerSubtitle {
-    color: #2F523C;
-  }
-  
-  /* Dropdown CSS */
+  /* Dropdown SASS */
   .dropDown{
     position: relative;
-    left: 17%;
+    left: 0%;
     display: inline-block;
   }
   
@@ -70,36 +66,42 @@ $main-background: rosybrown;
     background-color: #3e8e41;
   }
   
-  /* Main CSS */
+  /* Main SASS */
   .main {
     background-color: rgb(105, 105, 105);
     width: 100%;
     height: 80%;
     top: 10%;
-    left: 0px;
+    left: 0%;
     position: absolute;
   }
   
   .mainTitle {
     position: absolute;
-    top: 0px;
+    top: 0%;
     color: #2F523C;
     font-family: "Helvetica";
   }
 
   .mainContent {
-    position: absolute;
-    top: 10%;
-    font-size: 20px;
-    font-family: "Helvetica";
+    flex-basis: 225px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 20px;
+    background-color: white;
+    width: 6%;
+    height: 15%;
   }
   
-  /* Footer CSS */
+  /* Footer SASS */
   .footer {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: $site-font;
     background-color: $main-background;
     position: absolute;
@@ -109,13 +111,9 @@ $main-background: rosybrown;
     height: 10%;
   }
   
-  .footerLeft {
+  .footerMain {
     color: #515050;
   }
-  
-  .footerRight {
-    color: #2F523C;
-  }
-  
+
   
   
