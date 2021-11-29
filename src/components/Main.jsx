@@ -6,9 +6,6 @@ const Main = props => {
             <h1 className="mainTitle">
                 Main Title
             </h1>
-            <h1 className="mainContent">
-                {props.fact}
-            </h1>
         </main>
     )
 }
