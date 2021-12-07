@@ -1,6 +1,12 @@
 $site-font: "Copperplate", fantasy;
 $main-background: rosybrown;
 
+body {
+  background-image: url("farm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Header SASS */
 .header {
     display: flex;
@@ -68,7 +74,6 @@ $main-background: rosybrown;
   
   /* Main SASS */
   .main {
-    background-color: rgb(105, 105, 105);
     width: 100%;
     height: 80%;
     top: 10%;
@@ -130,5 +135,64 @@ $main-background: rosybrown;
     color: #515050;
   }
 
+  /* Survey SASS */
+  .form-container {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: lightblue;
+    padding: 50px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.form-title {
+  position: relative;
+  font-size: 17px;
   
-  
+}
+
+.form--input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form--submit {
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #639;
+    border: none;   
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.form--marketing {
+    display: flex;
+    margin-top: -5%;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+}
+
+.form--marketing > input {
+  margin-right: 10px;
+
+}
