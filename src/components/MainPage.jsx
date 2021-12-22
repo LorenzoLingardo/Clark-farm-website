@@ -8,6 +8,7 @@ import CFHistory from './CFHistory'
 import CFFacts from './CFFacts'
 import {Routes, Route} from "react-router-dom"
 import Survey from './Survey'
+import News from './News'
 
 function MainPage() {
     var title = document.querySelector('title');
@@ -16,16 +17,17 @@ function MainPage() {
       return <CFFacts key={content.id} fact={content.fact} />
     })
 
-    let isSignUp = true;
+    let isSignUp = false;
 
     return (
       <div>
         <Header />
         <Dropdown />
         <Main />
-        <section className="cfFacts">
+        <News />
+        {/* <section className="cfFacts">
           {cfFacts}
-        </section>
+        </section> */}
         {isSignUp && <Survey/>}
         <Footer />
       </div>

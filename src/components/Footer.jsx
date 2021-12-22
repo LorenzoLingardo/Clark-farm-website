@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <h4 className="footerMain">
-                Something
+                Friends of Clarks Historic Farm © 2013 All Rights Reserved
             </h4>
         </div>
     )
