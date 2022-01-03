@@ -1,14 +1,14 @@
 import React from 'react'
 
-const News = () => {
+const News = props => {
     return (
         <div className='news-main'>
             <h2 className='news-title'>
-                Test Title
+                {props.title}
             </h2>
-            {/* <img src="../nativity.jpg" className='news-img' alt='Nativity'/> */}
+            <img src={props.newsImg} className='news-img' alt={props.alt}/>
             <p className='news-desc'>
-                Test Text
+                {props.desc}
             </p>
         </div>
     )
