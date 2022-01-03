@@ -6,6 +6,7 @@ import Main from "./Main"
 import Dropdown from './Dropdown';
 import CFHistory from './CFHistory'
 import CFFacts from './CFFacts'
+import CFNews from './CFNews';
 import {Routes, Route} from "react-router-dom"
 import Survey from './Survey'
 import News from './News'
@@ -14,7 +15,20 @@ function MainPage() {
     var title = document.querySelector('title');
     title.innerText = 'Clark Historic Farm';
     const cfFacts = CFHistory.map(content => {
-      return <CFFacts key={content.id} fact={content.fact} />
+      return (
+        <CFFacts 
+          key={content.id} 
+          {...content} 
+        />)
+    })
+
+    const cfNews = CFNews.map(news => {
+      return (
+        <News 
+          key={news.id}
+          {...news} 
+        />
+      )
     })
 
     let isSignUp = false;
@@ -24,10 +38,10 @@ function MainPage() {
         <Header />
         <Dropdown />
         <Main />
-        <News />
-        {/* <section className="cfFacts">
+        {cfNews}
+        <section className="cfFacts">
           {cfFacts}
-        </section> */}
+        </section>
         {isSignUp && <Survey/>}
         <Footer />
       </div>
