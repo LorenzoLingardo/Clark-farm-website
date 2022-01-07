@@ -11,6 +11,8 @@ import {Routes, Route} from "react-router-dom"
 import Survey from './Survey'
 import News from './News'
 
+import Container from 'react-bootstrap/Container'
+
 function MainPage() {
     var title = document.querySelector('title');
     title.innerText = 'Clark Historic Farm';
@@ -31,7 +33,7 @@ function MainPage() {
       )
     })
 
-    let isSignUp = false;
+    let isSignUp = true;
 
     return (
       <div>
@@ -39,10 +41,11 @@ function MainPage() {
         <Dropdown />
         <Main />
         {cfNews}
-        <section className="cfFacts">
+        {/* <section className="cfFacts">
           {cfFacts}
-        </section>
+        </section> */}
         {isSignUp && <Survey/>}
+
         <Footer />
       </div>
     );

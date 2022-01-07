@@ -5,6 +5,7 @@ body {
   // background-image: url("background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
 
 /* Header SASS */
@@ -18,10 +19,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 10%;
+    height: 1fr;
   }
   
   .headerTitle {
@@ -31,7 +30,6 @@ body {
   /* Dropdown SASS */
   .dropDown{
     position: relative;
-    left: 0%;
     display: inline-block;
   }
   
@@ -71,6 +69,7 @@ body {
 
   .fas {
     color: rgb(167, 164, 164);
+    width: 100px;
   }
   
   /* Main SASS */
@@ -78,29 +77,23 @@ body {
     width: 100%;
     height: 80%;
     top: 10%;
-    left: 0%;
     position: absolute;
   }
   
   .mainTitle {
     position: absolute;
-    top: 0%;
     color: #2F523C;
     font-family: "Helvetica";
   }
 
+  /* Facts Bubbles SASS*/
   .cfFacts {
     display: flex;
     flex-direction: row; 
     flex-wrap: nowrap;
-    gap: 20px;
-  }
+    gap: 40px;
+    text-align: center;
 
-  .mainFacts {
-    width: auto;
-    font-size: 12px;
-    display: flex;
-    flex-direction: row; 
   }
 
   .factsContent {
@@ -117,17 +110,13 @@ body {
   
   /* Footer SASS */
   .footer {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     font-family: $site-font;
     background-image: url("header.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 100%;
-    left: 0px;
+    text-align: center;
+    width: 100%;    
   }
   
   .footerMain {
@@ -195,6 +184,7 @@ body {
 
 }
 
+/* News Component SASS */
 .news-main {
   margin-left: 0px;
   margin-top: 10em;
@@ -208,7 +198,7 @@ body {
 .news-img {
   position: relative;
   width: 125px;
-    height: 168px;
+  height: 168px;
 }
 
 .news-desc { 
