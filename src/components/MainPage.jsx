@@ -3,15 +3,13 @@ import '../App.scss';
 import Header from "./Header"
 import Footer from "./Footer"
 import Main from "./Main"
-import Dropdown from './Dropdown';
+import CovidHeader from './COVIDHeader';
 import CFHistory from './CFHistory'
 import CFFacts from './CFFacts'
 import CFNews from './CFNews';
 import {Routes, Route} from "react-router-dom"
 import Survey from './Survey'
 import News from './News'
-
-import Container from 'react-bootstrap/Container'
 
 function MainPage() {
     var title = document.querySelector('title');
@@ -33,17 +31,16 @@ function MainPage() {
       )
     })
 
-    let isSignUp = true;
+    let isSignUp = false;
 
     return (
       <div>
-        <Header />
-        <Dropdown />
+        <CovidHeader />
+        <Header/>
         <Main />
-        {cfNews}
-        {/* <section className="cfFacts">
+        <section className="cfFacts">  
           {cfFacts}
-        </section> */}
+        </section>
         {isSignUp && <Survey/>}
 
         <Footer />
