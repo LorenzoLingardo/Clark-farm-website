@@ -1,19 +1,18 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-const Dropdown = () => {
+const Dropdown = (props) => {
     return(
-        <div className="dropDown">
-            <i class="fas fa-dungeon fa-3x"></i>
-            <div className="dropDown-content">
+        <div className="dropDown text-dark">
+            <div className="dropDown-content text-dark">
                 <Link to ="/">
-                    Number One
+                    {props.one}
                 </Link>
                 <Link to ="/">
-                    Number Two
+                    {props.two}
                 </Link>
                 <Link to ="/">
-                    Number Three
+                    {props.three}
                 </Link>
             </div>
         </div>
