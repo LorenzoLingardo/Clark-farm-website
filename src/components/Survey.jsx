@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
+import { Button } from 'react-bootstrap'
 
 const Survey = () => {
     const [formData, setFormData] = useState(
@@ -10,7 +11,6 @@ const Survey = () => {
             firstName: "",
             lastName: "",
             email: "",
-            wantsNewsletter: false
         }
 
     )
@@ -28,16 +28,17 @@ const Survey = () => {
     const handleSubmit = event => {
         event.preventDefault()
 
-        formData.wantNewsletter && console.log("Thanks for signing up for our newsletter!")
+        console.log("Thanks for signing up for our newsletter!")
     }
+
     return (
         <Card>
-            <Card.Body>
-                <Card.Title>Sign up for our newsletter</Card.Title>
+            <Card.Body className='bg-accent'>
+                <Card.Title className='surveyTitle'>Sign up for updates on events at the Clark Farm</Card.Title>
                 <Card.Text>
                     <Container>
                         <Form onSubmit={handleSubmit}>
-                            <Col>
+                            <Col className="surveyBody grid">
                                 <Form.Control
                                     className='col-sm-3'
                                     type="text" 
@@ -62,14 +63,7 @@ const Survey = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                 />
-                                <input
-                                    id="okayToEmail"
-                                    type="checkbox"
-                                    variant='info'
-                                    name="wantNewsletter"
-                                    checked={formData.wantsNewsletter}
-                                    onChange={handleChange}
-                                /> I want to join the newsletter
+                                <Button onClick={handleSubmit}>Submit</Button>
                             </Col>
                         </Form>
                     </Container>

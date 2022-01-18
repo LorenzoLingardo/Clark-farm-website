@@ -2,9 +2,9 @@ import React from "react"
 
 const CFFacts = props => {
     return (
-        <div>
-            <h1 className="factsContent">
-                {props.fact} 
+        <div className="cfFacts">
+            <h1 className="factsContent fs-400 bg-white">
+                {props.fact}
             </h1>
         </div>
     )
