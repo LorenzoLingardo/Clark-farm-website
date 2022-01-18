@@ -31,18 +31,14 @@ function MainPage() {
       )
     })
 
-    let isSignUp = false;
-
     return (
-      <div>
+      <div className='parallax'>
         <CovidHeader />
         <Header/>
         <Main />
-        <section className="cfFacts">  
-          {cfFacts}
-        </section>
-        {isSignUp && <Survey/>}
-
+        {/* {cfNews}  */}
+        {cfFacts}
+        <Survey/>
         <Footer />
       </div>
     );

@@ -134,15 +134,15 @@ select {
 }
 
 .sr-only {
-position: absolute; 
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px; 
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-white-space: nowrap;
-border: 0;
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Colors */
@@ -185,12 +185,7 @@ border: 0;
 
 /* COVID Header SASS */
 .covidMain {
-  align-content: center;
-  justify-content: center;
-}
 
-.covidText {
-  
 }
 
 /* Header SASS */
@@ -206,12 +201,7 @@ border: 0;
 
 /* Facts Bubbles SASS*/
 .cfFacts {
-  display: flex;
-  flex-direction: row; 
-  flex-wrap: nowrap;
-  gap: 40px;
   text-align: center;
-
 }
 
 .factsContent {
@@ -219,7 +209,6 @@ border: 0;
   border-radius: 10px;
   padding: 13px;
   padding-bottom: 20px;
-  position: relative;
 }
   
 /* Footer SASS */
@@ -229,89 +218,47 @@ border: 0;
   background-size: cover;
   align-content: center;
   justify-content: center;
-  
-}
-  
-.footerMain {
-  
+  grid-template: minmax(10px, auto) / auto auto auto;
 }
 
+.footerMain {
+  margin-top: auto;
+}
 
 /* Survey SASS */
-.form-container {
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+.surveyTitle {
+  text-align: center;
+}
+
+.surveyBody {
+  grid-template-columns: 400px;
+  grid-template-rows: auto;
   justify-content: center;
-  align-items: center;
-}
-
-.form {
-  padding: 50px;
-  padding-bottom: 100px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
-}
-
-.form-title {
-  position: absolute;
-  font-size: 17px;
-  margin-bottom: 15%;
-}
-
-.form--input {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid gray;
-  padding: 5px;
-  font-family: 'Inter', sans-serif;;
-}
-
-.form--submit {
-  width: 10%;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  border: none;   
-  cursor: pointer;
-  position: absolute;
-  margin-top: 10%;
-}
-
-.form--marketing {
-  display: flex;
-  margin-top: 15%;
-  align-items: center;
-  position: absolute;
-  font-size: 15px;
-}
-
-.form--marketing > input {
-  margin-right: 10px;
-
 }
 
 /* News Component SASS */
 .news-main {
-  margin-left: 0px;
-  margin-top: 10px;
-  margin-bottom: 10em;
-}
+  display: grid;
+  grid-template-columns: minmax(1em, 15em) minmax(1em, 15em);
+  grid-auto-rows: minmax(12em, auto);
 
-.news-title {
-  margin: 10px;
 }
 
 .news-img {
-  position: relative;
-  width: 125px;
-  height: 168px;
+  width: 250px;
+  height: 250;
 }
 
-.news-desc { 
-  margin: -10.5em 10em 0em 10em;
+.parallax {
+  background-color: cadetblue;
+  // background-image: url("https://placeimg.com/640/480/tech/grayscale");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main */
+.main{
+  justify-content: center;
 }

@@ -8,10 +8,10 @@ const CovidHeader = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <div className="covidMain ff-serif">
-            <h1 className="covidText fs-500 text-dark">
-                Click <a href="" onClick={handleShow}> here</a> for our COVID information
-                <Modal show={show} onHide={handleClose} animation={false}>
+        <div className="covidMain ff-serif bg-accent flex">
+            <h1 className="fs-500 text-dark">
+                Click <Button onClick={handleShow} variant="link"> here </Button> for our COVID information
+                <Modal show={show} onHide={handleClose} animation={false} id="covidModal">
                     <Modal.Header closeButton>
                         <Modal.Title>COVID Info</Modal.Title>
                     </Modal.Header>
