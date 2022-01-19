@@ -1,4 +1,7 @@
-const CFNews = [
+import React from 'react'
+import News from './News'
+
+const CFNewsArray = [
     {
         id: 1,
         title: "Event 1",
@@ -21,5 +24,21 @@ const CFNews = [
         alt: "3"
     }
 ]
+
+const CFNews = () => {
+    return (
+        <div className="grid">
+            {
+                CFNewsArray.map(content => {
+                    return(
+                        <div className="bg-white">
+                            <News key={content.id} {...content}/>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
+}
 
 export default CFNews;

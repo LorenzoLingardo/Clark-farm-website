@@ -1,11 +1,12 @@
 import React from "react"
 
-const Main = props => {
+const Main = () => {
     return (
         <main className="main grid">
             <p>
-                Loerm ipsum yee haw ya who!
+                Lorem ipsum yee haw ya who!
             </p>
+            <img src="" alt="This thing"/>
         </main>
     )
 }
