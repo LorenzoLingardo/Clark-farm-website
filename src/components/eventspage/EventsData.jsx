@@ -1,38 +1,38 @@
 import React from 'react'
-import News from './News'
+import Events from './Events'
 
-const CFNewsArray = [
+const EventsDataArray = [
     {
         id: 1,
         title: "Event 1",
         desc: "This is event 1",
-        newsImg: "nativity.jpg",
+        eventImg: "nativity.jpg",
         alt: "1"
     },
     {
         id: 2,
         title: "Event 2",
         desc: "This is event 2",
-        newsImg: "nativity.jpg",
+        eventImg: "nativity.jpg",
         alt: "2"
     },
     {
         id: 3,
         title: "Event 3",
         desc: "This is event 3",
-        newsImg: "nativity.jpg",
+        eventImg: "nativity.jpg",
         alt: "3"
     }
 ]
 
-const CFNews = () => {
+const EventsData = () => {
     return (
         <div className="grid">
             {
-                CFNewsArray.map(content => {
+                EventsDataArray.map(content => {
                     return(
                         <div className="bg-white">
-                            <News key={content.id} {...content}/>
+                            <Events key={content.id} {...content}/>
                         </div>
                     )
                 })
@@ -41,4 +41,4 @@ const CFNews = () => {
     )
 }
 
-export default CFNews;
+export default EventsData;

@@ -1,12 +1,11 @@
 import React from 'react'
-import '../App.scss';
+import '../../scss/global.scss'
 import Header from "./Header"
 import Footer from "./Footer"
-import Main from "./Main"
+import MainIntro from "./MainIntro"
 import CovidHeader from './COVIDHeader';
-import CFHistory from './CFHistory'
-import CFNews from './CFNews';
 import Survey from './Survey'
+import MainOptionsDesc from './MainOptionsDesc';
 
 const MainPage = () => {
     var title = document.querySelector('title');
@@ -16,13 +15,12 @@ const MainPage = () => {
       <div className='parallax'>
         <CovidHeader />
         <Header/>
-        <Main />
-        {/* <CFNews/> */}
-        <CFHistory/>
+        <MainIntro />
+        <MainOptionsDesc/>
         <Survey/>
         <Footer />
       </div>
-    );
-  }
+  );
+}
   
-  export default MainPage;
+export default MainPage;

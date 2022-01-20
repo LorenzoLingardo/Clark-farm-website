@@ -1,0 +1,82 @@
+/* COVID Header SASS */
+.modalBtn {
+    margin-bottom: 5px;
+}
+
+/* Header SASS */
+.header {
+    background-image: url("../pictures/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerTitle {
+    text-decoration: none;
+}
+
+/* Options Bubbles SASS*/
+.mainOptions {
+    grid-template-columns: minmax(100px, auto) auto auto;
+    margin: 10px 10px 10px 10px;
+}
+
+.mainOptionsContent {
+    text-align: center;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 13px;
+    padding-bottom: 20px;
+}
+ 
+/* Footer SASS */
+.footer {
+    background-image: url("../pictures/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    grid-template: minmax(10px, auto) / auto auto auto;
+    padding: 15px;
+}
+
+.footerMain {
+    margin-top: auto;
+}
+
+/* Survey SASS */
+.surveyTitle {
+    text-align: center;
+}
+
+.surveyBody {
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+/* Events Component SASS */
+.events-main {
+    display: grid;
+    grid-template-columns: minmax(1em, 15em) minmax(1em, 15em);
+    grid-auto-rows: minmax(12em, auto);
+  
+}
+
+.events-img {
+    width: 250px;
+    height: 250;
+}
+
+.parallax {
+    background-color: cadetblue;
+    // background-image: url("https://placeimg.com/640/480/tech/grayscale");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main */
+.mainIntro {
+    justify-content: center;
+}

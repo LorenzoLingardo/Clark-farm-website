@@ -27,8 +27,10 @@ const Survey = () => {
 
     const handleSubmit = event => {
         event.preventDefault()
-
-        console.log("Thanks for signing up for our newsletter!")
+        
+        return (
+            <h1>Thanks for signing up!</h1>
+        )
     }
 
     return (
@@ -46,7 +48,7 @@ const Survey = () => {
                                     name="firstName"
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    />
+                                />
                                 <Form.Control
                                     className='col-sm-3' 
                                     type="text"
