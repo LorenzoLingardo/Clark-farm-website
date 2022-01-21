@@ -1,7 +1,6 @@
 import React from "react"
 import { Container, Navbar, NavDropdown, Nav} from "react-bootstrap";
 
-
 const Header = () => {
     return (
             <div className="header ff-serif fs-400 flex">

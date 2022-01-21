@@ -1,0 +1,34 @@
+/* Events Component SASS */
+
+.events-carousel {
+    margin: 10px;
+}
+
+.events-main {
+    grid-template-columns: minmax(1em, 40em);
+    grid-auto-rows: minmax(12em, auto);
+}
+
+.events-img {
+    width: minmax(250px, auto);
+    height: minmax(250px, auto);
+}
+
+.events-desc {
+    margin-top: 3em;
+}
+
+.events-grid {
+    grid-template-columns: minmax(250px, auto) 600px;
+    grid-template-rows: auto;
+}
+
+.fas {
+    padding: 0px 10px 0px 0px;
+    text-align: center;
+}
+
+.fas :hover {
+    color: blue;
+    cursor: pointer;
+}
