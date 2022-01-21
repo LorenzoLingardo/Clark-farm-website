@@ -54,19 +54,6 @@
     justify-content: center;
 }
 
-/* Events Component SASS */
-.events-main {
-    display: grid;
-    grid-template-columns: minmax(1em, 15em) minmax(1em, 15em);
-    grid-auto-rows: minmax(12em, auto);
-  
-}
-
-.events-img {
-    width: 250px;
-    height: 250;
-}
-
 .parallax {
     background-color: cadetblue;
     // background-image: url("https://placeimg.com/640/480/tech/grayscale");

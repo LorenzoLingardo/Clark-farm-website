@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Button, Modal } from "react-bootstrap";
 
-const CovidHeader = () => {
+const CovidBanner = () => {
     const [show, setShow] = useState(false);
     
     const handleClose = () => setShow(false);
@@ -9,7 +9,7 @@ const CovidHeader = () => {
     
     return (
         <div className="ff-serif bg-accent fs-500 text-dark">
-            <div className="covidHeader">
+            <div>
                 For our COVID regulations, click<Button className="modalBtn" style={{"text-decoration": "none", "font-size": "var(--fs-500)"}} onClick={handleShow} variant="link">here</Button>
             </div>
             <Modal show={show} onHide={handleClose} animation={false} id="covidModal">
@@ -22,4 +22,4 @@ const CovidHeader = () => {
     )
 }
 
-export default CovidHeader;
+export default CovidBanner;

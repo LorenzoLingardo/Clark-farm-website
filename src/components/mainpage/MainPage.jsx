@@ -1,19 +1,16 @@
 import React from 'react'
 import '../../scss/global.scss'
-import Header from "./Header"
-import Footer from "./Footer"
-import MainIntro from "./MainIntro"
-import CovidHeader from './COVIDHeader';
+import Header from "../../Header"
+import Footer from "../../Footer"
 import Survey from './Survey'
+import MainIntro from "./MainIntro"
+import CovidBanner from './COVIDBanner';
 import MainOptionsDesc from './MainOptionsDesc';
 
 const MainPage = () => {
-    var title = document.querySelector('title');
-    title.innerText = 'Clark Historic Farm';
-
     return (
       <div className='parallax'>
-        <CovidHeader />
+        <CovidBanner />
         <Header/>
         <MainIntro />
         <MainOptionsDesc/>

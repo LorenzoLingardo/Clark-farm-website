@@ -1,7 +1,13 @@
 import React from 'react'
+import './scss/global.scss'
+
+import { Routes } from 'react-router';
 import MainPage from './components/mainpage/MainPage';
+import EventsPage from './components/eventspage/EventsPage';
 
 function App() {
+  var title = document.querySelector('title');
+  title.innerText = 'Clark Historic Farm';
 
   return (
     <div>
@@ -11,7 +17,8 @@ function App() {
             <Route exact path="/main" element={<Main />}/>
             <Route exact path="/dropdown" element={<Dropdown />}/>
           </Routes> */}
-      <MainPage />
+      {/* <MainPage /> */}
+      <EventsPage />
     </div>
   );
 }
