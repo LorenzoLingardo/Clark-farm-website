@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button, Container } from 'react-bootstrap';
-import nativityData from '../data/nativityData';
+import { Button } from 'react-bootstrap';
 
 const EventsDesc = props => {
     return (
@@ -31,7 +30,7 @@ const EventsDesc = props => {
                 </i>
             </div>
             <h4 className='fs-400'>{props.desc}</h4>
-            <Button className=''>Buy stuff</Button>
+            <Button>Buy stuff</Button>
         </div>
     )
 }
