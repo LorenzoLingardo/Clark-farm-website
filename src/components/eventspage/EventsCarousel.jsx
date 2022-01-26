@@ -1,13 +1,13 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import nativityData from '../data/nativityData'
+import eventsData from '../data/eventsData'
 
 const EventsCarousel = () => {
     return (
         <div className="events-main grid">
             {
                 <Carousel className='events-carousel' interval={10000}>{
-                    nativityData.map(content => {
+                    eventsData.map(content => {
                         return(
                                 <Carousel.Item>
                                     <img 
