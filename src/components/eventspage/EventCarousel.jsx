@@ -2,7 +2,7 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import eventsData from '../data/eventsData'
 
-const EventsCarousel = () => {
+const EventCarousel = () => {
     return (
         <div className="events-main grid">
             {
@@ -24,4 +24,4 @@ const EventsCarousel = () => {
     )
 }
 
-export default EventsCarousel;
+export default EventCarousel;

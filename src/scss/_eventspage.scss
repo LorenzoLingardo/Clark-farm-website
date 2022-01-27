@@ -19,9 +19,16 @@
     max-width: 450px;
 }
 
+.event-grid {
+    grid-template-columns: minmax(250px, auto) 600px;
+    grid-template-rows: auto;
+}
+
 .events-grid {
     grid-template-columns: minmax(250px, auto) 600px;
     grid-template-rows: auto;
+    padding: 10px;
+    max-width: 100px;
 }
 
 .fas {
@@ -39,4 +46,10 @@
     grid-template-rows: minmax(100px, auto) minmax(100px, auto);
     justify-content: center;
     margin: 10px;
+}
+
+.add-info {
+    padding: 15px;
+    align-content: center;
+    justify-content: center;
 }

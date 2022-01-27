@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Navbar, NavDropdown, Nav} from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 import eventsData from "./components/data/eventsData";
+import educationData from "./components/data/educationData";
 
 const Header = () => {
     return (
@@ -22,7 +23,7 @@ const Header = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                        <NavDropdown title="Events" id="basic-nav-dropdown">
+                        <NavDropdown title="Events">
                             {eventsData.map (event => {
                                 return (
                                 <NavDropdown.Item>
@@ -33,18 +34,13 @@ const Header = () => {
                         </NavDropdown>
                         
                         <NavDropdown title="Education">
-                            <NavDropdown.Item>
-                                <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/events`}>Kids' Camps</Nav.Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/events`}>School Field Trips</Nav.Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/events`}>Scholarships</Nav.Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/events`}>School Presentations</Nav.Link>
-                            </NavDropdown.Item>
+                            {educationData.map (education => {
+                                return (
+                                <NavDropdown.Item>
+                                    <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/education/${education.id}`}>{education.title}</Nav.Link>
+                                </NavDropdown.Item>
+                                )
+                            })}
                         </NavDropdown>
                             <Nav.Link as={Link} to="/volunteer">Volunteer</Nav.Link>
                             <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
@@ -52,6 +48,7 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+                <Outlet/>
             </div>
             )
         }

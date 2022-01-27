@@ -1,15 +1,16 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import EventsCarousel from './EventsCarousel'
-import EventsDesc from './EventsDesc'
-import EventsPageContent from './EventsPageContent'
-import eventsData from '../data/eventsData'
+import EventCarousel from './EventCarousel'
+import EventDesc from './EventDesc'
+import EventBtmContent from './EventBtmContent'
+// import eventsData from '../data/eventsData'
 
-const EventsPage = () => {
+const Event = () => {
+
     return (
         <div>
-            <Container className='events-grid grid'>
-                <EventsCarousel />
+            <Container className='event-grid grid'>
+                <EventCarousel />
                 {/* {
                     eventsData.map(content => {
                         return (
@@ -19,14 +20,14 @@ const EventsPage = () => {
                         )
                     })
                 } */}
-                <EventsDesc/>
+                <EventDesc/>
             </Container>
-            <div className='addInfo bg-accent grid'>
+            <div className='add-info bg-accent grid'>
                 <h4>Additional Information</h4>
             </div>
-            <EventsPageContent/>
+            <EventBtmContent/>
         </div>
     )
 }
 
-export default EventsPage;
+export default Event;
