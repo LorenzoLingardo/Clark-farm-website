@@ -1,12 +1,14 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
+import eventsData from '../data/eventsData';
 
-const EventsDesc = props => {
+const EventDesc = () => {
+
     return (
         <div className='events-desc'>
-            <h1 className='fs-700'>{props.title}</h1>
-            <h2 className='fs-400'>{props.dates}</h2>
-            <h3 className='fs-400'>{props.prices}</h3>
+            <h1 className='fs-700'>{eventsData.title}</h1>
+            <h2 className='fs-400'>{eventsData.dates}</h2>
+            <h3 className='fs-400'>{eventsData.prices}</h3>
             <div className='icon-container'>
                 <i class="fas fa-biohazard fa-2x">
                     <h6>
@@ -29,10 +31,10 @@ const EventsDesc = props => {
                     </h6>
                 </i>
             </div>
-            <h4 className='fs-400'>{props.desc}</h4>
+            <h4 className='fs-400'>{eventsData.desc}</h4>
             <Button>Buy stuff</Button>
         </div>
     )
 }
 
-export default EventsDesc;
+export default EventDesc;

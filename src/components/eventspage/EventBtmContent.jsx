@@ -1,5 +1,5 @@
 import React from "react"
-import EventsBtm from "./EventsPageBtm"
+import EventBtm from "./EventBtm"
 
 const EventsBottomArray = [
     {
@@ -19,14 +19,14 @@ const EventsBottomArray = [
     }
 ]
 
-const EventsPageContent = () => {
+const EventBtmContent = () => {
     return (
         <div className="events-bottom-grid grid">
             {
                 EventsBottomArray.map(content => {
                     return(
                         <div className="bg-white" style={{"text-align": "center"}}>
-                            <EventsBtm key={content.id} {...content}/>
+                            <EventBtm key={content.id} {...content}/>
                         </div>
                     )
                 })
@@ -35,4 +35,4 @@ const EventsPageContent = () => {
     )
 }
 
-export default EventsPageContent;
+export default EventBtmContent;

@@ -1,9 +1,9 @@
 import React from "react";
 
-const EventsBtm = props => {
+const EventBtm = props => {
     return (
         <div><img src={props.img} alt=""/><h3>{props.desc}</h3></div>
     )
 }
 
-export default EventsBtm;
+export default EventBtm;
