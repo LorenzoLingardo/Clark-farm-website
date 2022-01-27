@@ -5,7 +5,7 @@ import educationData from "../data/educationData";
 const Educations = () => {
     return (
         <div>
-            <h1 className="fs-700" style={{"text-align": "center"}}>Educations</h1>
+            <h1 className="fs-700" style={{"text-align": "center"}}>Education Opportunities</h1>
         {
             educationData.map(content => {
                     return (
@@ -14,7 +14,7 @@ const Educations = () => {
                             <Container>
                                 <h1 className="fs-500">{content.title}</h1>
                                 <p>{content.desc}</p>
-                                <a style={{"text-decoration": "none"}} href={`/events/${content.id}`}>{content.title}</a>
+                                <a style={{"text-decoration": "none"}} href={`/education/${content.id}`}>{content.title}</a>
                             </Container>
                         </div>
                     )

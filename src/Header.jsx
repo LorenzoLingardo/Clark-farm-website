@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Navbar, NavDropdown, Nav} from "react-bootstrap";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import eventsData from "./components/data/eventsData";
 import educationData from "./components/data/educationData";
 
@@ -48,7 +48,6 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <Outlet/>
             </div>
             )
         }
