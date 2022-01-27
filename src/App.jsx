@@ -20,17 +20,17 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route exact path="/" element={<MainPage/>}></Route>
-        {/* TODO: create parent-child route between Events and Event */}
-        <Route exact path="/events" element={<Events/>}>
-          <Route path=":id" element={<Event />} />
-        </Route>
-        <Route exact path="/education" element={<Educations/>}>
-          <Route path=":id" element={<Education/>} />
-        </Route>
-        <Route exact path="/volunteer" element={<Volunteer/>}></Route>
-        <Route exact path="/aboutus" element={<AboutUs/>}></Route>
-        <Route path='*' element={<main><p>There's nothing here!</p></main>}/>
+          <Route exact path="/" element={<MainPage/>}/>
+          {/* TODO: create parent-child route between Events and Event */}
+          <Route exact path="/events" element={<Events/>}>
+            <Route path=":id" element={<Event />} />
+          </Route>
+          <Route exact path="/education" element={<Educations/>}>
+            <Route path=":id" element={<Education/>} />
+          </Route>
+          <Route exact path="/volunteer" element={<Volunteer/>}></Route>
+          <Route exact path="/aboutus" element={<AboutUs/>}></Route>
+          <Route path='*' element={<main><p>There's nothing here!</p></main>}/>
       </Routes>
       <Footer />
     </div>
