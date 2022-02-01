@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import educationData from "../data/educationData";
 
-const Educations = () => {
+const EducationOps = () => {
     return (
         <div>
             <h1 className="fs-700" style={{"text-align": "center"}}>Education Opportunities</h1>
@@ -25,4 +25,4 @@ const Educations = () => {
     )
 }
 
-export default Educations;
+export default EducationOps;

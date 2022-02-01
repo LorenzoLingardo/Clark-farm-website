@@ -10,7 +10,8 @@ import Volunteer from './components/volunteerpage/Volunteer';
 import AboutUs from './components/aboutuspage/AboutUs';
 import Header from './Header';
 import Footer from './Footer';
-import Educations from './components/educationpage/Educations';
+import EducationOps from './components/educationpage/EducationOps';
+import { Paths } from './utils/Paths';
 
 function App() {
   var title = document.querySelector('title');
@@ -20,16 +21,15 @@ function App() {
     <div>
       <Header />
       <Routes>
-          <Route exact path="/" element={<MainPage/>}/>
-          {/* TODO: create parent-child route between Events and Event */}
-          <Route exact path="/events" element={<Events/>}>
-            <Route path=":id" element={<Event />} />
-          </Route>
-          <Route exact path="/education" element={<Educations/>}>
-            <Route path=":id" element={<Education/>} />
-          </Route>
-          <Route exact path="/volunteer" element={<Volunteer/>}></Route>
-          <Route exact path="/aboutus" element={<AboutUs/>}></Route>
+          <Route exact path={Paths.home} element={<MainPage/>}/>
+            <Route exact path={Paths.events} element={<Events/>} />
+            <Route path={Paths.eventID} element={<Event />} />
+
+            <Route exact path={Paths.education} element={<EducationOps/>}/>
+            <Route path={Paths.educationID} element={<Education/>} />
+            
+          <Route exact path={Paths.volunteer} element={<Volunteer/>}></Route>
+          <Route exact path={Paths.aboutUs}  element={<AboutUs/>}></Route>
           <Route path='*' element={<main><p>There's nothing here!</p></main>}/>
       </Routes>
       <Footer />

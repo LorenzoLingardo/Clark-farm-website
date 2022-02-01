@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import eventData from "../data/eventsData";
+import { Paths } from "../../utils/Paths";
 
 const Events = () => {
     return (
