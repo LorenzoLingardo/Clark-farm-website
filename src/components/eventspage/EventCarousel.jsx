@@ -2,18 +2,19 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import eventsData from '../data/eventsData'
 
-const EventCarousel = () => {
+const EventCarousel = ({event}) => {
+    console.log(event);
     return (
         <div className="events-main grid">
             {
                 <Carousel className='events-carousel' interval={10000}>{
-                    eventsData.map(content => {
+                    event.eventImg.map(imgURL => {
                         return(
-                                <Carousel.Item>
+                                <Carousel.Item key={imgURL}>
                                     <img 
-                                        src={content.eventImg} 
+                                        src={imgURL} 
                                         className='events-img' 
-                                        alt={content.alt}/>
+                                    />
                                 </Carousel.Item>
                         )
                     })

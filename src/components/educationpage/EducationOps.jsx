@@ -5,7 +5,7 @@ import educationData from "../data/educationData";
 const EducationOps = () => {
     return (
         <div>
-            <h1 className="fs-700" style={{"text-align": "center"}}>Education Opportunities</h1>
+            <h1 className="fs-700" style={{"textAlign": "center"}}>Education Opportunities</h1>
         {
             educationData.map(content => {
                     return (

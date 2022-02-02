@@ -9,8 +9,7 @@ const eventsData = [
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
         desc: "This is event 1",
-        eventImg: "https://placeimg.com/640/480/nature",
-        alt: "1"
+        eventImg: ["https://placeimg.com/640/480/nature"],
     },
     {
         id: "flapjacks",
@@ -22,8 +21,7 @@ const eventsData = [
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
         desc: "This is event 2",
-        eventImg: "https://placeimg.com/640/480/arch",
-        alt: "2"
+        eventImg: ["https://placeimg.com/640/480/arch"],
     },
     {
         id: "summerconcerts",
@@ -35,8 +33,7 @@ const eventsData = [
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
         desc: "This is event 3",
-        eventImg: "https://placeimg.com/640/480/animals",
-        alt: "3"
+        eventImg: ["https://placeimg.com/640/480/animals"],
     },
     {
         id: "honeyharvest",
@@ -48,8 +45,7 @@ const eventsData = [
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
         desc: "This is event 3",
-        eventImg: "https://placeimg.com/640/480/people",
-        alt: "4"
+        eventImg: ["https://placeimg.com/640/480/people"],
     },
     {
         id: "nativity",
@@ -61,8 +57,7 @@ const eventsData = [
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
         desc: "This is event 3",
-        eventImg: "https://placeimg.com/640/480/tech",
-        alt: "5"
+        eventImg: ["https://placeimg.com/640/480/tech"],
     }
 ]
 

@@ -1,8 +1,8 @@
 import React from "react"
 import { Container, Navbar, NavDropdown, Nav} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import eventsData from "./components/data/eventsData";
-import educationData from "./components/data/educationData";
+import eventsData from "../components/data/eventsData";
+import educationData from "../components/data/educationData";
 
 const Header = () => {
     return (

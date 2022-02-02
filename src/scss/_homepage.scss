@@ -17,11 +17,11 @@
 /* Options Bubbles SASS*/
 .mainOptions {
     grid-template-columns: minmax(100px, auto) auto auto;
-    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .mainOptionsContent {
-    text-align: center;
+    textAlign: center;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 13px;
@@ -45,7 +45,7 @@
 
 /* Survey SASS */
 .surveyTitle {
-    text-align: center;
+    textAlign: center;
 }
 
 .surveyBody {

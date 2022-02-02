@@ -15,8 +15,24 @@
 }
 
 .events-desc {
-    margin-top: 3em;
     max-width: 450px;
+}
+
+.events-grid {
+    grid-template-columns: 750px 500px;
+    grid-template-rows: auto;
+    padding: 10px;
+}
+
+.events-tab {
+    grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto;
+}
+
+.btm-grid {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 50px;
 }
 
 .event-grid {
@@ -24,16 +40,9 @@
     grid-template-rows: auto;
 }
 
-.events-grid {
-    grid-template-columns: minmax(250px, auto) 600px;
-    grid-template-rows: auto;
-    padding: 10px;
-    max-width: 100px;
-}
-
 .fas {
     padding: 0px 10px 0px 0px;
-    text-align: center;
+    textAlign: center;
 }
 
 .fas :hover {
