@@ -6,20 +6,19 @@ import educationData from "../components/data/educationData";
 
 const Header = () => {
     return (
-            <div className="header ff-serif fs-400 flex">
-                <Navbar expand="sm" variant="dark">
+            <div className="header ff-sans-cond fs-500 flex">
+                <Navbar expand="sm" variant="light">
                     <Container>
                         <Nav.Link as={Link} to="/">
                             <img
+                                className="header-logo"
                                 src="https://placeimg.com/640/480/nature"
                                 width="30"
                                 height="30"
                                 alt="Website Logo"
-                                style={{"margin":"0px 10px 0px 0px"}}
                             />
                         </Nav.Link>
-                        
-                        <Navbar.Brand to="/">Clark Historic Farm</Navbar.Brand>
+
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

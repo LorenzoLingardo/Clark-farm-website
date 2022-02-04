@@ -7,8 +7,8 @@ import eventsData from '../data/eventsData';
 import { useParams } from 'react-router';
 
 const Event = () => {
-    const { id } = useParams()
-    const event = eventsData.find(event=> event.id === id)
+    const { id } = useParams();
+    const event = eventsData.find(event=> event.id === id);
     return (
         <div>
             <Container className='event-grid grid'>

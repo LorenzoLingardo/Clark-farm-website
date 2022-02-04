@@ -3,8 +3,7 @@ import React from "react"
 const MainIntro = () => {
     return (
         <main className="mainIntro grid">
-            <p>Lorem ipsum yee haw ya who!</p>
-            <img src="https://placeimg.com/640/480/tech/grayscale" alt="This thing"/>
+            <h2 className="intro-welcome text-light ff-sans-cond fs-600">Welcome to the <h1 className="intro-farm ff-serif fs-800">Clark Historic Farm</h1></h2>
         </main>
     )
 }

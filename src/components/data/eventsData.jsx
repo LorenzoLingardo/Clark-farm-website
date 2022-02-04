@@ -8,8 +8,9 @@ const eventsData = [
         favicon2: "fas fa-biohazard fa-2x",
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
-        desc: "This is event 1",
-        eventImg: ["https://placeimg.com/640/480/nature"],
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        eventImg: ["https://placeimg.com/640/480/nature",
+        "https://placeimg.com/640/480/arch"],
     },
     {
         id: "flapjacks",
@@ -20,7 +21,7 @@ const eventsData = [
         favicon2: "fas fa-biohazard fa-2x",
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
-        desc: "This is event 2",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         eventImg: ["https://placeimg.com/640/480/arch"],
     },
     {
@@ -32,7 +33,7 @@ const eventsData = [
         favicon2: "fas fa-biohazard fa-2x",
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
-        desc: "This is event 3",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         eventImg: ["https://placeimg.com/640/480/animals"],
     },
     {
@@ -44,7 +45,7 @@ const eventsData = [
         favicon2: "fas fa-biohazard fa-2x",
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
-        desc: "This is event 3",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         eventImg: ["https://placeimg.com/640/480/people"],
     },
     {
@@ -56,7 +57,7 @@ const eventsData = [
         favicon2: "fas fa-biohazard fa-2x",
         favicon3: "fas fa-biohazard fa-2x",
         favicon4: "fas fa-biohazard fa-2x",
-        desc: "This is event 3",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         eventImg: ["https://placeimg.com/640/480/tech"],
     }
 ]

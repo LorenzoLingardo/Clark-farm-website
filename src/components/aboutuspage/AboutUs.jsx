@@ -7,6 +7,9 @@ const AboutUs = () => {
             <h1>
                 About Us
             </h1>
+            <p>
+                All this stuff too
+            </p>
             <Survey />
         </div>
     )

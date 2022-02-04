@@ -38,16 +38,12 @@
 .event-grid {
     grid-template-columns: minmax(250px, auto) 600px;
     grid-template-rows: auto;
+    align-items: center;
 }
 
 .fas {
     padding: 0px 10px 0px 0px;
-    textAlign: center;
-}
-
-.fas :hover {
-    color: blue;
-    cursor: pointer;
+    text-align: center;
 }
 
 .events-bottom-grid {

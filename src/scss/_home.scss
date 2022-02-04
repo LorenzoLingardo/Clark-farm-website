@@ -1,13 +1,19 @@
 /* COVID Header SASS */
 .modalBtn {
-    margin-bottom: 5px;
+    /* TODO Align modal correctly*/
+    
 }
 
 /* Header SASS */
 .header {
-    background-image: url("../pictures/header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url("../pictures/header.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    justify-content: end;
+    background: #d2edf6;
+}
+
+.header-logo {
 }
 
 .headerTitle {
@@ -21,7 +27,7 @@
 }
 
 .mainOptionsContent {
-    textAlign: center;
+    text-align: center;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 13px;
@@ -45,7 +51,7 @@
 
 /* Survey SASS */
 .surveyTitle {
-    textAlign: center;
+    text-align: center;
 }
 
 .surveyBody {
@@ -55,17 +61,31 @@
 }
 
 .parallax {
-    background-color: cadetblue;
+    // background-color: cadetblue;
     // background-image: url("https://placeimg.com/640/480/tech/grayscale");
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+/* Main */
+.mainIntro {
+    justify-content: center;
+    background-image: url("https://placeimg.com/640/480/tech/grayscale");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* Main */
-.mainIntro {
-    justify-content: center;
+.intro-welcome {
+    text-align: center;
+}
+
+.intro-farm {
+    text-align: center;
+    max-width: 100px;
 }
 
 

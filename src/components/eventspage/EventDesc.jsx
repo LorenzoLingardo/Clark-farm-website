@@ -6,10 +6,10 @@ const EventDesc = ({event}) => {
     
     return (
         <div className='events-desc'>
-            <h1 className='fs-700'>{event.title}</h1>
-            <h2 className='fs-400'>{event.dates}</h2>
-            <h3 className='fs-400'>{event.prices}</h3>
-            <div className='icon-container'>
+            <h1 className='fs-700' style={{"margin": "10px 0px"}}>{event.title}</h1>
+            <h2 className='fs-400' style={{"margin": "10px 0px"}}>{event.dates}</h2>
+            <h3 className='fs-400' style={{"margin": "10px 0px"}}>{event.prices}</h3>
+            <div className='icon-container' style={{"margin": "10px 0px"}}>
                 <i className="fas fa-biohazard fa-2x">
                     <h6>
                         This thing 1
@@ -31,8 +31,8 @@ const EventDesc = ({event}) => {
                     </h6>
                 </i>
             </div>
-            <h4 className='fs-400'>{event.desc}</h4>
-            <Button>Buy stuff</Button>
+            <h4 className='fs-400' style={{"margin": "10px 0px"}}>{event.desc}</h4>
+            <Button style={{"margin": "10px 0px"}}>Buy stuff</Button>
         </div>
     )
 }

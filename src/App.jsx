@@ -12,6 +12,7 @@ import Header from './utils/Header';
 import Footer from './utils/Footer';
 import EducationOps from './components/educationpage/EducationOps';
 import { Paths } from './utils/Paths';
+import CovidBanner from './components/mainpage/COVIDBanner';
 
 function App() {
   var title = document.querySelector('title');
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <CovidBanner/>
       <Header />
       <content>
         <Routes>
