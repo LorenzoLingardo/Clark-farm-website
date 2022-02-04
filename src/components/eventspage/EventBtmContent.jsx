@@ -25,7 +25,7 @@ const EventBtmContent = () => {
             {
                 EventsBottomArray.map(content => {
                     return(
-                        <div className="bg-white" style={{"text-align": "center"}}>
+                        <div className="bg-white" style={{"textAlign": "center"}}>
                             <EventBtm key={content.id} {...content}/>
                         </div>
                     )

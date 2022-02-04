@@ -80,9 +80,18 @@ body {
   background-color: hsl( var(--clr-dark) );
   line-height: 1.5;
   min-height: 100vh;
-  
-  display: grid;
   grid-template-rows: min-content 1fr;
+}
+
+content {
+  display: block;
+  flex-grow: 1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img,
