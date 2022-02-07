@@ -1,6 +1,5 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import eventsData from '../data/eventsData'
 
 const EventCarousel = ({event}) => {
     console.log(event);
@@ -13,7 +12,8 @@ const EventCarousel = ({event}) => {
                                 <Carousel.Item key={imgURL}>
                                     <img 
                                         src={imgURL} 
-                                        className='events-img' 
+                                        className='events-img'
+                                        alt="" 
                                     />
                                 </Carousel.Item>
                         )

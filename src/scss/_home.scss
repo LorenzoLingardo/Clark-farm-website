@@ -60,33 +60,16 @@
     justify-content: center;
 }
 
-.parallax {
-    // background-color: cadetblue;
-    // background-image: url("https://placeimg.com/640/480/tech/grayscale");
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-}
-
 /* Main */
 .mainIntro {
     justify-content: center;
-    background-image: url("https://placeimg.com/640/480/tech/grayscale");
+    background-image: url("../pictures/clark_farm_main.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.intro-welcome {
-    text-align: center;
-}
-
-.intro-farm {
-    text-align: center;
-    max-width: 100px;
-}
 
 
 
