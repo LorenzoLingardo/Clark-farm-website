@@ -1,24 +1,18 @@
 /* COVID Header SASS */
-.modalBtn {
-    /* TODO Align modal correctly*/
+// .modalBtn {
+//     /* TODO Align modal correctly*/
     
-}
+// }
 
 /* Header SASS */
 .header {
-    // background-image: url("../pictures/header.png");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    justify-content: end;
-    background: #d2edf6;
+    background-color: rgba(#d2edf6, .5);
 }
 
-.header-logo {
+.header-dropdowns {
+    justify-content: flex-end;
 }
 
-.headerTitle {
-    text-decoration: none;
-}
 
 /* Options Bubbles SASS*/
 .mainOptions {
@@ -61,15 +55,6 @@
 }
 
 /* Main */
-.mainIntro {
-    justify-content: center;
-    background-image: url("../pictures/clark_farm_main.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-img {
+    width: 200em;
 }
-
-
-
-
