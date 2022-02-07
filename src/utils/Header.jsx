@@ -6,12 +6,11 @@ import educationData from "../components/data/educationData";
 
 const Header = () => {
     return (
-            <div className="header ff-sans-cond fs-500 flex">
+            <div className="header">
                 <Navbar expand="sm" variant="light">
                     <Container>
                         <Nav.Link as={Link} to="/">
                             <img
-                                className="header-logo"
                                 src="https://placeimg.com/640/480/nature"
                                 width="30"
                                 height="30"
@@ -19,14 +18,14 @@ const Header = () => {
                             />
                         </Nav.Link>
 
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Navbar.Toggle className="header-dropdowns flex" aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse className="header-dropdowns flex" id="basic-navbar-nav">
+                        <Nav className="header-dropdowns flex">
                         <NavDropdown title="Events">
                             {eventsData.map (event => {
                                 return (
                                 <NavDropdown.Item>
-                                    <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/events/${event.id}`}>{event.title}</Nav.Link>
+                                    <Nav.Link as={Link} style={{"text-decoration": "none"}} to={`/events/${event.id}`}>{event.title}</Nav.Link>
                                 </NavDropdown.Item>
                                 )
                             })}

@@ -2,8 +2,8 @@ import React from "react"
 
 const MainIntro = () => {
     return (
-        <main className="mainIntro grid">
-            <img src="../../pictures/clark_farm_main.jpg" alt="Clark Farm Red Barn"/>
+        <main>
+            <img className="main-img flex" src={require("../../pictures/clark_farm_main.jpg")} alt="Clark Farm Red Barn"/>
         </main>
     )
 }
