@@ -6,7 +6,7 @@ import educationData from "../components/data/educationData";
 
 const Header = () => {
     return (
-            <div className="header">
+            <div className="header fs-400">
                 <Navbar expand="sm" variant="light">
                     <Container>
                         <Nav.Link as={Link} to="/">
@@ -25,7 +25,7 @@ const Header = () => {
                             {eventsData.map (event => {
                                 return (
                                 <NavDropdown.Item>
-                                    <Nav.Link as={Link} style={{"text-decoration": "none"}} to={`/events/${event.id}`}>{event.title}</Nav.Link>
+                                    <Nav.Link as={Link} style={{textDecoration: "none"}} to={`/events/${event.id}`}>{event.title}</Nav.Link>
                                 </NavDropdown.Item>
                                 )
                             })}
@@ -35,7 +35,7 @@ const Header = () => {
                             {educationData.map (education => {
                                 return (
                                 <NavDropdown.Item>
-                                    <Nav.Link as={Link} className="text-dark" style={{"text-decoration": "none"}} to={`/education/${education.id}`}>{education.title}</Nav.Link>
+                                    <Nav.Link as={Link} className="text-dark" style={{textDecoration: "none"}} to={`/education/${education.id}`}>{education.title}</Nav.Link>
                                 </NavDropdown.Item>
                                 )
                             })}

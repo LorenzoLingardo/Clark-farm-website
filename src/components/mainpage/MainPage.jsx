@@ -7,10 +7,10 @@ const MainPage = () => {
     return (
       <div className='parallax'>
         <MainIntro />
-        <h1 className='bg-light flex'>THIS THING</h1>
+        <h1 className='bg-light flex' style={{justifyContent: "center"}}>THIS THING</h1>
         <MainOptionsDesc/>
       </div>
   );
 }
-  
+
 export default MainPage;
