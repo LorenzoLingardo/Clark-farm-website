@@ -1,8 +1,14 @@
-/* COVID Header SASS */
-// .modalBtn {
-//     /* TODO Align modal correctly*/
-    
-// }
+/* COVID Banner*/
+.fas {
+    margin-left: 10px;
+}
+
+.banner-content {
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: 15px auto auto;
+    grid-template-rows: 40px;
+}
 
 /* Header SASS */
 .header {
@@ -13,11 +19,10 @@
     justify-content: flex-end;
 }
 
-
 /* Options Bubbles SASS*/
 .mainOptions {
-    grid-template-columns: minmax(100px, auto) auto auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+    justify-content: space-evenly;
 }
 
 .mainOptionsContent {
@@ -58,3 +63,4 @@
 .main-img {
     width: 200em;
 }
+

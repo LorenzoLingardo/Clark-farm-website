@@ -5,7 +5,6 @@ const MainOptions = props => {
         <div> 
             {props.title}
             <img src={props.img} alt=""/>
-            <a href={props.link}>This thing</a>
         </div>
     )
 }

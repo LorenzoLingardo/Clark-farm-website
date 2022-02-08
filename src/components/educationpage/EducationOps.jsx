@@ -14,7 +14,7 @@ const EducationOps = () => {
                             <Container>
                                 <h1 className="fs-500">{content.title}</h1>
                                 <p>{content.desc}</p>
-                                <a style={{"text-decoration": "none"}} href={`/education/${content.id}`}>{content.title}</a>
+                                <a style={{textDecoration: "none"}} href={`/education/${content.id}`}>{content.title}</a>
                             </Container>
                         </div>
                     )

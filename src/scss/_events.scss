@@ -48,7 +48,7 @@
 
 .events-bottom-grid {
     grid-template-columns: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
-    grid-template-rows: minmax(100px, auto) minmax(100px, auto);
+    grid-template-rows: minmax(100px, auto) minmax(10px, auto);
     justify-content: center;
     margin: 10px;
 }
