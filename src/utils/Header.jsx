@@ -11,6 +11,7 @@ const Header = () => {
                     <Container>
                         <Nav.Link as={Link} to="/">
                             <img
+                                className="header-img"
                                 src="https://placeimg.com/640/480/nature"
                                 width="30"
                                 height="30"

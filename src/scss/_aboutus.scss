@@ -1,0 +1,12 @@
+.about-desc {
+    max-width: 25em;
+}
+
+.about-container {
+    grid-template-columns: auto 30em;
+    justify-content: space-around;
+}
+
+.about-title {
+    text-align: center;
+}
