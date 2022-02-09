@@ -12,7 +12,7 @@ const CovidBanner = () => {
             <div className="banner-content grid">
                 <i className="fas fa-info-circle"></i>
                     {`The safety of our visitors and volunteers is important to us. For information about our COVID-19 policies, click`}
-                <Button style={{textDecoration: "none", fontSize: "var(--fs-300)", "padding": "0px"}} onClick={handleShow} variant="link">here</Button>
+                <Button className="modal-link" style={{textDecoration: "none", fontSize: "var(--fs-300)", "padding": "0px"}} onClick={handleShow} variant="link">here</Button>
             </div>
             <Modal show={show} onHide={handleClose} animation={false} id="covidModal">
                 <Modal.Header closeButton>

@@ -1,18 +1,26 @@
 /* COVID Banner*/
 .fas {
-    margin-left: 10px;
+    margin-left: .5em;
 }
 
 .banner-content {
     justify-content: start;
     align-items: center;
-    grid-template-columns: 15px auto auto;
-    grid-template-rows: 40px;
+    grid-template-columns: 1em auto auto;
+    grid-template-rows: 3em;
+}
+
+.modal-link {
+    margin: -2em;
 }
 
 /* Header SASS */
 .header {
     background-color: rgba(#d2edf6, .5);
+}
+
+.header-img {
+    border-radius: 25px;
 }
 
 .header-dropdowns {
