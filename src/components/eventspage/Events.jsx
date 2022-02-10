@@ -13,6 +13,7 @@ const Events = () => {
                              <Container>
                                  <h1 className="fs-500">{content.title}</h1>
                                  <p>{content.desc}</p>
+                                 <p>{content.dates}</p>
                                 <a style={{textDecoration: "none"}} href={`/events/${content.id}`}>{content.title}</a>
                              </Container>
                          </div>

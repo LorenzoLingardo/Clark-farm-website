@@ -2,7 +2,6 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
 const EventCarousel = ({event}) => {
-    console.log(event);
     return (
         <div className="events-main grid">
             {

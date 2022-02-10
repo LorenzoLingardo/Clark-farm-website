@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <CovidBanner/>
-      <Header />
+      <Header/>
       <content>
         <Routes>
             <Route exact path={Paths.home} element={<MainPage/>}/>
