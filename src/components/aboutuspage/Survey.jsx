@@ -27,7 +27,6 @@ const Survey = () => {
 
     const handleSubmit = event => {
         event.preventDefault()
-        
         return (
             <h1>Thanks for signing up!</h1>
         )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import EventCarousel from './EventCarousel'
 import EventDesc from './EventDesc'
 import EventBtmContent from './EventBtmContent'
