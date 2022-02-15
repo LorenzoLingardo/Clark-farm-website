@@ -1,17 +1,18 @@
 import React from "react"
+import { Col, Container, Row } from "react-bootstrap"
 import MainOptions from "./MainOptions"
 
 const MainOptionsDescArray = [
     {
         id: 1,
         title: "Upcoming Events",
-        img: "https://placeimg.com/640/480/animals",
+        img: "https://placeimg.com/640/480/nature",
         link: "events"
     },
     {
         id: 2,
         title: "Volunteer",
-        img: "https://placeimg.com/640/480/architecture",
+        img: "https://placeimg.com/640/480/animals",
         link: "volunteer"
     },
     {
@@ -24,18 +25,20 @@ const MainOptionsDescArray = [
 
 const MainOptionsDesc = () => {
     return (
-        <div className="mainOptions ff-sans-cond flex">
+        <Container className="main-options ff-sans-cond">
+            <Row className="my-4">
             {
                 MainOptionsDescArray.map(content => {
                     return(
-                        <div className="mainOptionsContent bg-white">
+                        <Col className="main-options-content bg-white mx-2">
                             <MainOptions key={content.id} {...content}/>
                             <a style={{textDecoration: "none"}} href={`/${content.link}`}>{content.title}</a>
-                        </div>
+                        </Col>
                     )
                 })
             }
-        </div>
+            </Row>
+        </Container>
     )
 }
 

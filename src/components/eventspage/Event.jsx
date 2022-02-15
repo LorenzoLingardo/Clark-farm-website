@@ -11,9 +11,15 @@ const Event = () => {
     const event = eventsData.find(event=> event.id === id);
     return (
         <div>
-            <Container className='event-grid grid'>
-                <EventCarousel event={event}/>
-                <EventDesc event={event}/>
+            <Container className='event-grid'>
+                <Row>
+                    <Col>
+                        <EventCarousel event={event}/>
+                    </Col>
+                    <Col>
+                        <EventDesc event={event}/>
+                    </Col>
+                </Row>
             </Container>
             <div className='add-info bg-accent grid'>
                 <h4>Additional Information</h4>

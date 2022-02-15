@@ -1,4 +1,5 @@
 import React from "react"
+import { Container, Row, Col } from "react-bootstrap"
 import EventBtm from "./EventBtm"
 
 const EventsBottomArray = [
@@ -21,17 +22,19 @@ const EventsBottomArray = [
 
 const EventBtmContent = () => {
     return (
-        <div className="events-bottom-grid grid">
-            {
-                EventsBottomArray.map(content => {
-                    return(
-                        <div className="bg-white" style={{"textAlign": "center"}}>
-                            <EventBtm key={content.id} {...content}/>
-                        </div>
-                    )
-                })
-            }
-        </div>
+        <Container className="events-bottom-grid">
+            <Row>
+                {
+                    EventsBottomArray.map(content => {
+                        return(
+                            <Col className="bg-white" style={{"textAlign": "center"}}>
+                                <EventBtm key={content.id} {...content}/>
+                            </Col>
+                        )
+                    })
+                }  
+            </Row>
+        </Container>
     )
 }
 
