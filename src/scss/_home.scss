@@ -6,12 +6,15 @@
 .banner-content {
     justify-content: start;
     align-items: center;
-    grid-template-columns: 1em auto auto;
-    grid-template-rows: 3em;
+    flex-flow: column nowrap;
 }
 
-.modal-link {
-    margin: -2em;
+.banner-link {
+    margin-left: -.75em;
+}
+
+.banner-text {
+    align-items: center;
 }
 
 /* Header SASS */
@@ -28,32 +31,24 @@
 }
 
 /* Options Bubbles SASS*/
-.mainOptions {
-    padding: 10px;
-    justify-content: space-evenly;
-}
+// .main-options {
+// }
 
-.mainOptionsContent {
+.main-options-content {
     text-align: center;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 13px;
-    padding-bottom: 20px;
+}
+
+.main-divider {
+    text-align: center;
 }
  
 /* Footer SASS */
 .footer {
     background-color: rgba(#d2edf6, .5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
     justify-content: center;
-    grid-template: minmax(10px, auto) / auto auto auto;
-    padding: 15px;
-}
-
-.footerMain {
-    margin-top: auto;
+    align-items: center;
 }
 
 /* Survey SASS */
@@ -62,8 +57,6 @@
 }
 
 .surveyBody {
-    grid-template-columns: 400px;
-    grid-template-rows: auto;
     justify-content: center;
 }
 

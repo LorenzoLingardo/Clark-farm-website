@@ -1,10 +1,11 @@
 import React from "react"
+import { Container } from "react-bootstrap";
 
 const Education = () => {
     return (
-    <div>
+    <Container>
         <h1 className="education-title">Coming soon</h1>
-    </div>)
+    </Container>)
 }
 
 export default Education; 
