@@ -1,5 +1,4 @@
 /* Events Component SASS */
-
 .events-carousel {
     margin: 10px;
 }
@@ -19,36 +18,25 @@
 }
 
 .events-grid {
-    grid-template-columns: 750px 500px;
-    grid-template-rows: auto;
+    grid-template-columns: (750px, auto);
     padding: 10px;
 }
 
-.events-tab {
-    grid-template-rows: auto;
-    display: grid;
-    grid-template-columns: 100px auto auto auto auto;
-}
-
 .btm-grid {
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: (100px, 100px);
+    grid-template-rows: (50px, 50px);
 }
 
 .event-grid {
-    grid-template-columns: minmax(250px, auto) 600px;
-    grid-template-rows: auto;
     align-items: center;
 }
 
 .fas {
-    padding: 0px 10px 0px 0px;
+    padding: (0 10px 0 0);
     text-align: center;
 }
 
 .events-bottom-grid {
-    grid-template-columns: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
-    grid-template-rows: minmax(100px, auto) minmax(10px, auto);
     justify-content: center;
     margin: 10px;
 }
