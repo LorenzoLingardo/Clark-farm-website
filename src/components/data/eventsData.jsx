@@ -2,7 +2,7 @@ const eventsData = [
   {
     id: "barnyardbabies",
     title: "Barnyard Babies",
-    dates: "April 4-May 17, 2022  10 AM-4PM",
+    dates: "April 4-May 17, 2022  10AM-4PM",
     prices: "Tickets $5 for ages 5+",
     favicon1: "fas fa-biohazard fa-2x",
     favicon2: "fas fa-biohazard fa-2x",
@@ -17,7 +17,7 @@ const eventsData = [
   {
     id: "flapjacks",
     title: "Flapjacks at the Farm",
-    dates: "April 4, May 17, 2022  10 AM-4PM",
+    dates: "April 4, May 17, 2022  10AM-4PM",
     prices: "Tickets $5 for ages 5+",
     favicon1: "fas fa-biohazard fa-2x",
     favicon2: "fas fa-biohazard fa-2x",
@@ -29,7 +29,7 @@ const eventsData = [
   {
     id: "summerconcerts",
     title: "Summer Concerts",
-    dates: "April 4, May 17, 2022  10 AM-4PM",
+    dates: "April 4, May 17, 2022  10AM-4PM",
     prices: "Tickets $5 for ages 5+",
     favicon1: "fas fa-biohazard fa-2x",
     favicon2: "fas fa-biohazard fa-2x",
@@ -41,7 +41,7 @@ const eventsData = [
   {
     id: "honeyharvest",
     title: "Honey Harvest Festival",
-    dates: "April 4, May 17, 2022  10 AM-4PM",
+    dates: "April 4, May 17, 2022  10AM-4PM",
     prices: "Tickets $5 for ages 5+",
     favicon1: "fas fa-biohazard fa-2x",
     favicon2: "fas fa-biohazard fa-2x",
@@ -53,7 +53,7 @@ const eventsData = [
   {
     id: "nativity",
     title: "Live Nativity",
-    dates: "April 4, May 17, 2022  10 AM-4PM",
+    dates: "April 4, May 17, 2022  10AM-4PM",
     prices: "Tickets $5 for ages 5+",
     favicon1: "fas fa-biohazard fa-2x",
     favicon2: "fas fa-biohazard fa-2x",

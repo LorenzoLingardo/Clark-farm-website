@@ -30,9 +30,9 @@ const MainOptionsDesc = () => {
         {MainOptionsDescArray.map((content) => {
           return (
             <Col sm>
-              <div className="main-options-content bg-white mb-3">
-                <MainOptions key={content.id} {...content} />
+              <div className="main-options-content bg-white mb-3 mx-3">
                 <a style={{ textDecoration: "none" }} href={`/${content.link}`}>
+                  {<MainOptions key={content.id} {...content} />}
                   {content.title}
                 </a>
               </div>

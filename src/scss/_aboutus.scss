@@ -1,15 +1,15 @@
 /* About Us Component SASS */
-.about-desc {
-    max-width: 25em;
-}
 
-.about-container {
-    grid-template-columns: (auto 30em);
-    justify-content: space-around;
+.about-desc {
+    max-width: 500px;
 }
 
 .about-title {
     text-align: center;
+}
+
+.about-img {
+    max-width: 30em;
 }
 
 /* Survey SASS */

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import eventsData from "../data/eventsData";
 
 const Events = () => {
@@ -10,23 +9,28 @@ const Events = () => {
       </h1>
       {eventsData.map((content) => {
         return (
-          <div className="events-grid bg-white grid">
-            <img
-              style={{ "border-radius": "10px" }}
-              src={content.eventImg}
-              alt=""
-            />
-            <Container>
-              <h1 className="fs-500">{content.title}</h1>
-              <p>{content.desc}</p>
-              <p>{content.dates}</p>
+          <div className="bg-white">
+            <div className="m-3">
               <a
                 style={{ textDecoration: "none" }}
                 href={`/events/${content.id}`}
               >
-                {content.title}
+                {
+                  <img
+                    style={{ "border-radius": "10px" }}
+                    src={content.eventImg}
+                    alt=""
+                  />
+                }
               </a>
-            </Container>
+              <div>
+                <h1 className="fs-500">{content.title}</h1>
+                <p className="events-desc">{content.desc}</p>
+                <p className="fs-400">{content.dates}</p>
+              </div>
+            </div>
+
+            <h1 className="bg-dark text-light">{content.title}</h1>
           </div>
         );
       })}

@@ -6,11 +6,11 @@ const EventDesc = ({ event }) => {
     <Container className="events-desc">
       <Row>
         <Col>
-          <div style={{ margin: "10px 0px" }}>
+          <div style={{ margin: "10px 10px" }}>
             <h1 className="fs-700">{event.title}</h1>
             <h2 className="fs-400">{event.dates}</h2>
             <h3 className="fs-400">{event.prices}</h3>
-            <div className="icon-container">
+            <div className="flex">
               <i className="fas fa-biohazard fa-2x">
                 <h6>This thing 1</h6>
               </i>
