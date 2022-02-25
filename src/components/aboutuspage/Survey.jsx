@@ -37,7 +37,7 @@ const Survey = () => {
             <Form onSubmit={handleSubmit}>
               <Col className="survey-body grid">
                 <Form.Control
-                  className="col-sm-3"
+                  className=""
                   type="text"
                   placeholder="First Name"
                   name="firstName"

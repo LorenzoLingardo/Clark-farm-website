@@ -4,8 +4,7 @@
 }
 
 .events-main {
-    grid-template-columns: minmax(1em, 40em);
-    grid-auto-rows: minmax(12em, auto);
+
 }
 
 .events-img {
@@ -17,11 +16,6 @@
     max-width: 450px;
 }
 
-.events-grid {
-    grid-template-columns: (750px, auto);
-    padding: 10px;
-}
-
 .btm-grid {
     grid-template-columns: (100px, 100px);
     grid-template-rows: (50px, 50px);
@@ -31,9 +25,9 @@
     align-items: center;
 }
 
-.fas {
-    padding: (0 10px 0 0);
+.fa-biohazard {
     text-align: center;
+    margin-right: 10px;
 }
 
 .events-bottom-grid {
