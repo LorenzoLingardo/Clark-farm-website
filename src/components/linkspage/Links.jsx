@@ -1,13 +1,13 @@
-import React from "react";
-import eventsData from "../data/eventsData";
+import React from "react"
+import linksData from "../data/linksData";
 
-const Events = () => {
-  return (
+const Links = () => {
+    return (
     <div>
       <h1 className="fs-700" style={{ textAlign: "center" }}>
-        Events
+        Related Links
       </h1>
-      {eventsData.map((content) => {
+      {linksData.map((content) => {
         return (
           <div className="bg-white">
             <div className="m-3">
@@ -25,8 +25,6 @@ const Events = () => {
               </a>
               <div>
                 <h1 className="fs-500">{content.title}</h1>
-                <p className="events-desc">{content.desc}</p>
-                <p className="fs-400">{content.dates}</p>
               </div>
             </div>
 
@@ -35,7 +33,7 @@ const Events = () => {
         );
       })}
     </div>
-  );
-};
+    )
+}
 
-export default Events;
+export default Links;
