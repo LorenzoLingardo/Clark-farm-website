@@ -6,4 +6,5 @@ export const Paths = {
   educationID: "/education/:id",
   volunteer: "/volunteer",
   aboutUs: "/aboutus",
+  links: "/links",
 };
