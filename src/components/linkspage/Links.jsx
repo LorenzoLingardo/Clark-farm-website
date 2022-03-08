@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 import linksData from "../data/linksData";
 
 const Links = () => {
-    return (
+  return (
     <div>
       <h1 className="fs-700" style={{ textAlign: "center" }}>
         Related Links
@@ -33,7 +33,7 @@ const Links = () => {
         );
       })}
     </div>
-    )
-}
+  );
+};
 
 export default Links;
