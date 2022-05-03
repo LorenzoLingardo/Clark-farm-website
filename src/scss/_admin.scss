@@ -1,0 +1,36 @@
+/* Image Upload */
+.image-upload {
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+.dashboard {
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.dashboard-button {
+    width: 20vw;
+    height: 20vw;
+    &.events {
+        background-image: url("https://placeimg.com/640/480/arch");
+        background-size: cover;
+    }
+    &.education {
+        background-image: url("https://placeimg.com/640/480/animals");
+        background-size: cover;
+    }
+    &.volunteer {
+        background-image: url("https://placeimg.com/640/480/tech");
+        background-size: cover;
+    }
+    &.aboutus {
+        background-image: url("https://placeimg.com/640/480/nature");
+        background-size: cover;
+    }
+    &.home {
+        background-image: url("https://placeimg.com/640/480/arch");
+        background-size: cover;
+    }
+}

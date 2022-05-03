@@ -15,7 +15,7 @@ const CovidBanner = () => {
           {`The safety of our visitors and volunteers is important to us. For information about our COVID-19 policies,`}
           <Button
             className="banner-link fs-300"
-            style={{ textDecoration: "none", "padding-left": "0px" }}
+            style={{ textDecoration: "none", "padding": "0px" }}
             onClick={handleShow}
             variant="link"
           >

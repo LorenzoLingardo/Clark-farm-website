@@ -17,7 +17,7 @@ const Links = () => {
               >
                 {
                   <img
-                    style={{ "border-radius": "10px", "max-width": "400px" }}
+                    style={{ borderRadius: "10px", maxWidth: "400px" }}
                     src={content.eventImg}
                     alt=""
                   />

@@ -1,10 +1,17 @@
 export const Paths = {
   home: "/",
   events: "/events",
-  eventID: "/events/:id",
+  eventID: "/events/:slug",
   education: "/education",
   educationID: "/education/:id",
   volunteer: "/volunteer",
   aboutUs: "/aboutus",
   links: "/links",
+  admin: "/admin",
+  adminEvents: "/admin/events",
+  adminEvent: "/admin/events/:slug",
+  adminEducation: "/admin/education",
+  adminVolunteer: "/admin/volunteer",
+  adminAboutUs: "/admin/aboutus",
+  adminHome: "/admin/homepage",
 };

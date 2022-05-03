@@ -24,7 +24,7 @@ const EventDesc = ({ event }) => {
                 <h6>This thing 4</h6>
               </i>
             </div>
-            <h4 className="fs-400" style={{ "max-width": "400px" }}>
+            <h4 className="fs-400" style={{ maxWidth: "400px" }}>
               {event.desc}
             </h4>
             <Button>Buy stuff</Button>
