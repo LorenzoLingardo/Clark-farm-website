@@ -6,7 +6,7 @@ const EventCarousel = ({ event }) => {
     <div className="events-main grid">
       {
         <Carousel className="events-carousel" interval={10000}>
-          {event.eventImg.map((imgURL) => {
+          {event.images.map((imgURL) => {
             return (
               <Carousel.Item key={imgURL}>
                 <img src={imgURL} className="events-img" alt="" />

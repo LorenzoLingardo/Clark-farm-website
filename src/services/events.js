@@ -2,22 +2,22 @@ import { db } from "./firebase";
 import {
   addDoc,
   collection,
-  deleteDoc,
   doc,
-  getDoc,
   updateDoc,
+  query,
+  getDocs,
+  getDoc,
 } from "firebase/firestore";
 
-
-export const makeSlug = mainFormData => {
-  return mainFormData.title.replace(/ /g,"-").toLowerCase();
-}
+export const makeSlug = (mainFormData) => {
+  return mainFormData.title.replace(/ /g, "-").toLowerCase();
+};
 
 export const addNewEvent = async (mainFormData) => {
   await addDoc(collection(db, "test"), {
     date: mainFormData.date,
     desc: mainFormData.desc,
-    images: [mainFormData.images],
+    images: mainFormData.images,
     prices: mainFormData.prices,
     slug: makeSlug(mainFormData),
     title: mainFormData.title,
@@ -39,21 +39,21 @@ export const overwriteEvent = async (mainFormData) => {
   }
 };
 
-export const getDocData = async () => {
-  const docRef = doc(db, "test", "dE8xeRWXjTak03J3lHv7");
+export const getAllEvents = async () => {
+  const q = query(collection(db, "events"));
+  const querySnapshot = await getDocs(q);
+  const events = [];
+  querySnapshot.forEach((doc) => events.push({ id: doc.id, ...doc.data() }));
+  return events;
+};
+
+export const getEvent = async () => {
+  const docRef = doc(db, "events", doc.id);
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {
     console.log("Document data:", docSnap.data());
   } else {
-    console.log("Niente cose");
+    console.log("No such document");
   }
-}
-
-// export const deleteEvent = async () => {
-//   try {
-//     await deleteDoc(doc(db, "test", "ck7xvPXPdhgM7M9xts6p"));
-//   } catch (e) {
-//     console.log(e);
-//   }
-// };
+};

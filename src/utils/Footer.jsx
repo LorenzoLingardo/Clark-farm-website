@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  var year = new Date().getFullYear();
+  
   return (
     <div className="ff-sans-normal text-dark">
       <div className="footer flex p-2">
@@ -14,7 +16,7 @@ const Footer = () => {
         </Link>
 
         <h4 className="fs-400">
-          Friends of Clark Historic Farm © 2022 All Rights Reserved
+          Friends of Clark Historic Farm © {year} All Rights Reserved
         </h4>
       </div>
     </div>

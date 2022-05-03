@@ -14,6 +14,9 @@ import Footer from "./utils/Footer";
 import EducationOps from "./components/educationpage/EducationOps";
 import { Paths } from "./utils/Paths";
 import CovidBanner from "./components/mainpage/COVIDBanner";
+import AdminEvent from "./components/admin/AdminEvent";
+import AdminEvents from "./components/admin/AdminEvents";
+import AdminDashboard from "./components/admin/AdminDashboard";
 
 function App() {
   var title = document.querySelector("title");
@@ -23,16 +26,23 @@ function App() {
     <>
       <CovidBanner />
       <Header />
-      <content>
+      <main>
         <Routes>
           <Route exact path={Paths.home} element={<MainPage />} />
           <Route exact path={Paths.events} element={<Events />} />
           <Route path={Paths.eventID} element={<Event />} />
           <Route exact path={Paths.education} element={<EducationOps />} />
           <Route path={Paths.educationID} element={<Education />} />
-          <Route exact path={Paths.volunteer} element={<Volunteer />}></Route>
-          <Route exact path={Paths.aboutUs} element={<AboutUs />}></Route>
+          <Route exact path={Paths.volunteer} element={<Volunteer />}/>
+          <Route exact path={Paths.aboutUs} element={<AboutUs />}/>
           <Route exact path={Paths.links} element={<Links />} />
+          <Route exact path={Paths.admin} element={<AdminDashboard />} />
+          <Route exact path={Paths.adminEvents} element={<AdminEvents/>} />
+          <Route exact path={Paths.adminEvent} element={<AdminEvent/>}/>
+          {/* <Route exact path={Paths.adminEducation} element={<AdminEducation/>}/>
+          <Route exact path={Paths.adminVolunteer} element={<AdminVolunteer/>}/>
+          <Route exact path={Paths.adminAboutUs} element={<AdminAboutUs/>}/>
+          <Route exact path={Paths.adminHome} element={<AdminHome/>}/> */}
           <Route
             path="*"
             element={
@@ -42,7 +52,7 @@ function App() {
             }
           />
         </Routes>
-      </content>
+      </main>
 
       <Footer />
     </>

@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = initializeApp({
+export const firebaseConfig = initializeApp({
   apiKey: "AIzaSyCvH9u2tHp6mTVuWOdri-fAlZjp79yk9Us",
   authDomain: "clarkhistoricfarm-31b32.firebaseapp.com",
   projectId: "clarkhistoricfarm-31b32",
   storageBucket: "clarkhistoricfarm-31b32.appspot.com",
-  messagingSenderId: "862341147797",
+  messagingSenderId: "862341147797", 
   appId: "1:862341147797:web:4aca4ee146a4cbd4c9bf9c",
 });
 

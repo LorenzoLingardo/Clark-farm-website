@@ -3,8 +3,20 @@ import { Container, Navbar, NavDropdown, Nav, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import eventsData from "../components/data/eventsData";
 import educationData from "../components/data/educationData";
+import { useState, useEffect } from "react";
+import { getAllEvents } from "../services/events";
+import { useParams } from "react-router";
 
 const Header = () => {
+  const { slug } = useParams();
+  const [allEvents, setAllEvents] = useState([]);
+
+  useEffect(() => {
+    getAllEvents().then((events) => {
+      console.table(events);
+      setAllEvents(events);
+    });
+  }, [slug]);
   return (
     <div className="header fs-400">
       <Col>
@@ -27,13 +39,14 @@ const Header = () => {
             <Navbar.Collapse className="header-dropdowns" id="basic-navbar-nav">
               <Nav className="header-dropdowns">
                 <NavDropdown title="Events">
-                  {eventsData.map((event) => {
+                  {allEvents.map((event) => {
                     return (
-                      <NavDropdown.Item>
+                      <NavDropdown.Item key={event.id}>
                         <Nav.Link
                           as={Link}
+                          className="text-dark"
                           style={{ textDecoration: "none" }}
-                          to={`/events/${event.id}`}
+                          to={`/events/${event.slug}`}
                         >
                           {event.title}
                         </Nav.Link>
@@ -45,7 +58,7 @@ const Header = () => {
                 <NavDropdown title="Education">
                   {educationData.map((education) => {
                     return (
-                      <NavDropdown.Item>
+                      <NavDropdown.Item key={education.id}>
                         <Nav.Link
                           as={Link}
                           className="text-dark"

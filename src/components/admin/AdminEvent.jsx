@@ -1,15 +1,14 @@
 import React from "react";
 import {
   addNewEvent,
-  deleteEvent,
-  getDocData,
+  getAllEvents,
   overwriteEvent,
 } from "../../services/events";
 import { Form } from "react-bootstrap";
 import { useState } from "react";
-import { ImageUpload } from "./ImageUpload";
+import { ImagesUpload } from "./ImagesUpload";
 
-const AdminMain = () => {
+const AdminEvent = () => {
   const [mainFormData, setMainFormData] = useState({
     title: "",
     date: "",
@@ -26,7 +25,7 @@ const AdminMain = () => {
         [name]: value,
       };
     });
-  };
+  };                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
   return (
     <div>
@@ -62,7 +61,7 @@ const AdminMain = () => {
           />
         </Form.Group>
         {/* Image Form */}
-        <ImageUpload/>
+        <ImagesUpload />
         <Form.Group controlId="formEventPrices">
           <Form.Label>Prices</Form.Label>
           <Form.Control
@@ -76,10 +75,9 @@ const AdminMain = () => {
       </Form>
       <button onClick={() => addNewEvent(mainFormData)}>Add</button>
       <button onClick={() => overwriteEvent(mainFormData)}>Update</button>
-      {/* <button onClick={() => deleteEvent}>Delete</button> */}
-      <button onClick={() => getDocData()}>Beep Bop</button>
+      <button onClick={() => getAllEvents()}>Beep Bop</button>
     </div>
   );
 };
 
-export default AdminMain;
+export default AdminEvent;

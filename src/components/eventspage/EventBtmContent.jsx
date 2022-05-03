@@ -9,7 +9,7 @@ const EventBtmContent = () => {
       <Row>
         {eventBtmData.map((content) => {
           return (
-            <Col sm>
+            <Col sm key={content.id}>
               <div className="bg-white mx-2" style={{ textAlign: "center" }}>
                 <EventBtm key={content.id} {...content} />
               </div>

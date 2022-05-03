@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import EventCarousel from "./EventCarousel";
 import EventDesc from "./EventDesc";
 import EventBtmContent from "./EventBtmContent";
-import eventsData from "../data/eventsData";
 import { useParams } from "react-router";
+import { getAllEvents, getEvent } from "../../services/events";
 
 const Event = () => {
-  const { id } = useParams();
-  const event = eventsData.find((event) => event.id === id);
+  const { slug } = useParams();
+  // const event = eventsData.find((event) => event.id === id);
+
+  const [allEvents, setAllEvents] = useState([]);
+  const [event, setEvent] = useState()
+
+  useEffect(() => {
+    getAllEvents().then((events) => {
+      console.table(events);
+      setAllEvents(events);
+    });
+  }, [slug]);
+
+  useEffect(() => {
+    setEvent(allEvents.find((event) => event.slug === slug))
+  }, [allEvents])
+
+  if(!event) return (<p>Loading...</p>)
+
+  console.log(event)
+
   return (
     <div>
       <Container>
